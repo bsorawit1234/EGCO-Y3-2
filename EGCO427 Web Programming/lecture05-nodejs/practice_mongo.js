@@ -7,7 +7,8 @@ const client = new MongoClient(url);
 const dbName = "Student";
 
 const main = async () => {
-  await client.connect();
+  //desktop.postman.com/?desktopVersion=11.34.4&userId=38027714&teamId=5408207&region=us
+  https: await client.connect();
   const db = client.db(dbName);
   const collection = db.collection("student_records");
 
